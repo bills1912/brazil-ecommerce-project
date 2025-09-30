@@ -39,7 +39,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Load data
-@st.cache_data
 def load_data():
     """Load all necessary datasets"""
     try:
@@ -68,7 +67,6 @@ def load_data():
         return orders_df, rfm_df, monthly_sales, delivery_df, state_summary, city_summary, category_summary, payment_summary, customers_geo, product_pairs, review_summary
     except FileNotFoundError as e:
         st.error(f"⚠️ Data files not found: {e}")
-        st.info("Please run 'python analisis_data_olist.py' first to generate the data.")
         st.stop()
 
 # Load data
