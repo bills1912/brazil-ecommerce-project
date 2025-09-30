@@ -1,0 +1,5 @@
+cluster,Avg_Recency,Avg_Frequency,Avg_Monetary,Customer_Count,Label
+0,74.54,2.2,593.71,727,VIP Customers
+1,275.13,2.08,374.43,1870,Loyal Customers
+2,419.58,1.0,169.77,28822,At Risk
+3,149.0,1.0,170.49,58321,Low Value
