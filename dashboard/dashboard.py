@@ -43,20 +43,20 @@ st.markdown("""
 def load_data():
     """Load all necessary datasets"""
     try:
-        orders_df = pd.read_csv('dashboard_data/orders_complete.csv')
-        rfm_df = pd.read_csv('dashboard_data/rfm_analysis.csv')
-        monthly_sales = pd.read_csv('dashboard_data/monthly_sales.csv')
-        delivery_df = pd.read_csv('dashboard_data/delivery_performance.csv')
-        state_summary = pd.read_csv('dashboard_data/state_summary.csv')
-        city_summary = pd.read_csv('dashboard_data/city_summary.csv')
-        category_summary = pd.read_csv('dashboard_data/category_summary.csv')
-        payment_summary = pd.read_csv('dashboard_data/payment_summary.csv')
+        orders_df = pd.read_csv('https://raw.githubusercontent.com/bills1912/brazil-ecommerce-project/refs/heads/main/dashboard/dashboard_data/orders_complete.csv')
+        rfm_df = pd.read_csv('https://raw.githubusercontent.com/bills1912/brazil-ecommerce-project/refs/heads/main/dashboard/dashboard_data/rfm_analysis.csv')
+        monthly_sales = pd.read_csv('https://raw.githubusercontent.com/bills1912/brazil-ecommerce-project/refs/heads/main/dashboard/dashboard_data/monthly_sales.csv')
+        delivery_df = pd.read_csv('https://raw.githubusercontent.com/bills1912/brazil-ecommerce-project/refs/heads/main/dashboard/dashboard_data/delivery_performance.csv')
+        state_summary = pd.read_csv('https://raw.githubusercontent.com/bills1912/brazil-ecommerce-project/refs/heads/main/dashboard/dashboard_data/state_summary.csv')
+        city_summary = pd.read_csv('https://raw.githubusercontent.com/bills1912/brazil-ecommerce-project/refs/heads/main/dashboard/dashboard_data/city_summary.csv')
+        category_summary = pd.read_csv('https://raw.githubusercontent.com/bills1912/brazil-ecommerce-project/refs/heads/main/dashboard/dashboard_data/category_summary.csv')
+        payment_summary = pd.read_csv('https://raw.githubusercontent.com/bills1912/brazil-ecommerce-project/refs/heads/main/dashboard/dashboard_data/payment_summary.csv')
         
         # Optional files
         try:
-            customers_geo = pd.read_csv('dashboard_data/customers_with_coordinates.csv')
-            product_pairs = pd.read_csv('dashboard_data/product_pairs.csv')
-            review_summary = pd.read_csv('dashboard_data/review_summary.csv')
+            customers_geo = pd.read_csv('https://raw.githubusercontent.com/bills1912/brazil-ecommerce-project/refs/heads/main/dashboard/dashboard_data/customers_with_coordinates.csv')
+            product_pairs = pd.read_csv('https://raw.githubusercontent.com/bills1912/brazil-ecommerce-project/refs/heads/main/dashboard/dashboard_data/product_pairs.csv')
+            review_summary = pd.read_csv('https://raw.githubusercontent.com/bills1912/brazil-ecommerce-project/refs/heads/main/dashboard/dashboard_data/review_summary.csv')
         except:
             customers_geo = None
             product_pairs = None
